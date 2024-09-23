@@ -152,3 +152,24 @@ hero_type('Terrorblade', range).
 
 % Правила
 
+% Герой ближнего боя
+hero_is_melee(Hero) :- hero(Hero), hero_type(Hero, melee).
+
+% Герой сложнее другого
+hero_is_harder(Hero1, Hero2) :- hero(Hero1), hero(Hero2), hero_difficulty(Hero1, Diff1), hero_difficulty(Hero2, Diff2), Diff1 > Diff2.
+compare_heroes(>, Hero1, Hero2) :- hero_is_harder(Hero1, Hero2).
+compare_heroes(<, Hero1, Hero2) :- hero_is_harder(Hero2, Hero1).
+compare_heroes(=, Hero1, Hero2) :- hero_difficulty(Hero1, Diff), hero_difficulty(Hero2, Diff).
+
+% Герой дальнего боя, основной атрибут - ловкость
+hero_range_agility :- hero(Hero), (hero_type(Hero, range); hero_attribute(Hero, agility)).
+
+% Герой - инициатор
+hero_initiator(Hero) :- hero(Hero), hero_role(Hero, initiator).
+
+% Герой - не саппорт
+hero_not_support :- hero(Hero), \+hero_role(Hero, support).
+
+% Смогут ли герои успешно постоять линию (один carry, другой - support)
+succesful_line(Hero1, Hero2) :- hero(Hero1), hero(Hero2), ((hero_role(Hero1, carry), hero_role(Hero2, support));
+    (hero_role(Hero1, support), hero_role(Hero2, carry))).

@@ -1,0 +1,20 @@
+hero('Rubick').
+
+hero('Arthas').
+
+hero_attribute('Pudge', Pudge_attribute).
+
+% Найти первого героя нюкера с аттрибутом не сила
+hero(Hero), \+(hero_attribute(Hero, strength)), hero_role(Hero, nuker), !.
+
+% Найти героев с аттрибутом сила или универсал, не дальнего боя
+findall(Hero, ((hero_attribute(Hero, universal); hero_attribute(Hero, strength)), \+(hero_type(Hero, range))), Result).
+
+% Найти двух героев, которые успешно постоят линию. Но кери должен иметь аттрибут ловкости, а саппорт - интеллект.
+findall((Carry, Support), 
+    (
+        succesful_line(Carry, Support), 
+        hero_attribute(Carry, agility),
+        hero_attribute(Support, intelligence)
+    ), 
+    Pairs).
