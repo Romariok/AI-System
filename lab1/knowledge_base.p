@@ -13,11 +13,6 @@ hero('Invoker').
 hero('Void Spirit').
 hero('Abaddon').
 
-% Сложность
-difficulty(1).
-difficulty(2).
-difficulty(3).
-
 % Главный атрибут
 
 attribute(strength).
@@ -142,13 +137,13 @@ hero_type('Pudge', melee).
 hero_type('Bounty Hunter', melee).
 hero_type('Void Spirit', melee).
 hero_type('Abaddon', melee).
+hero_type('Terrorblade', melee).
 
 hero_type('Rubick', range).
 hero_type('Tinker', range).
 hero_type('Jakiro', range).
 hero_type('Invoker', range).
 hero_type('Arc Warden', range).
-hero_type('Terrorblade', range).
 
 % Правила
 

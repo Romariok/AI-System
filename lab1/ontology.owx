@@ -1,0 +1,714 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/ronya/ontologies/2024/8/ontology"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/ronya/ontologies/2024/8/ontology">
+    <Prefix name="" IRI="http://www.semanticweb.org/ronya/ontologies/2024/8/ontology/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Attribute"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hero"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Role"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Type"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Have_Attribute"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Have_Role"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Have_Type"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Have_Difficulty"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Abaddon"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Agility"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Alchemist"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Arc_Warden"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bounty_Hunter"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Carry"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Disabler"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Durable"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Earth_Spirit"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Escape"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Initiator"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Intelligence"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Invoker"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Jakiro"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Melee"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Nuker"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pudge"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pusher"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Range"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Rubick"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Strength"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Support"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Terrorblade"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tinker"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Universal"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Void_Spirit"/>
+    </Declaration>
+    <DisjointClasses>
+        <Class IRI="#Attribute"/>
+        <Class IRI="#Hero"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Attribute"/>
+        <Class IRI="#Role"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Attribute"/>
+        <Class IRI="#Type"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Hero"/>
+        <Class IRI="#Role"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Hero"/>
+        <Class IRI="#Type"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Role"/>
+        <Class IRI="#Type"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Hero"/>
+        <NamedIndividual IRI="#Abaddon"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#Agility"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Hero"/>
+        <NamedIndividual IRI="#Alchemist"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Hero"/>
+        <NamedIndividual IRI="#Arc_Warden"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Hero"/>
+        <NamedIndividual IRI="#Bounty_Hunter"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Role"/>
+        <NamedIndividual IRI="#Carry"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Role"/>
+        <NamedIndividual IRI="#Disabler"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Role"/>
+        <NamedIndividual IRI="#Durable"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Hero"/>
+        <NamedIndividual IRI="#Earth_Spirit"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Role"/>
+        <NamedIndividual IRI="#Escape"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Role"/>
+        <NamedIndividual IRI="#Initiator"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#Intelligence"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Hero"/>
+        <NamedIndividual IRI="#Invoker"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Hero"/>
+        <NamedIndividual IRI="#Jakiro"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Type"/>
+        <NamedIndividual IRI="#Melee"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Role"/>
+        <NamedIndividual IRI="#Nuker"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Hero"/>
+        <NamedIndividual IRI="#Pudge"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Role"/>
+        <NamedIndividual IRI="#Pusher"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Type"/>
+        <NamedIndividual IRI="#Range"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Hero"/>
+        <NamedIndividual IRI="#Rubick"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#Strength"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Role"/>
+        <NamedIndividual IRI="#Support"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Hero"/>
+        <NamedIndividual IRI="#Terrorblade"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Hero"/>
+        <NamedIndividual IRI="#Tinker"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#Universal"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Hero"/>
+        <NamedIndividual IRI="#Void_Spirit"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Have_Attribute"/>
+        <NamedIndividual IRI="#Abaddon"/>
+        <NamedIndividual IRI="#Universal"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Have_Role"/>
+        <NamedIndividual IRI="#Abaddon"/>
+        <NamedIndividual IRI="#Carry"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Have_Role"/>
+        <NamedIndividual IRI="#Abaddon"/>
+        <NamedIndividual IRI="#Durable"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Have_Role"/>
+        <NamedIndividual IRI="#Abaddon"/>
+        <NamedIndividual IRI="#Support"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Have_Type"/>
+        <NamedIndividual IRI="#Abaddon"/>
+        <NamedIndividual IRI="#Melee"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Have_Attribute"/>
+        <NamedIndividual IRI="#Alchemist"/>
+        <NamedIndividual IRI="#Strength"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Have_Role"/>
+        <NamedIndividual IRI="#Alchemist"/>
+        <NamedIndividual IRI="#Carry"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Have_Role"/>
+        <NamedIndividual IRI="#Alchemist"/>
+        <NamedIndividual IRI="#Disabler"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Have_Role"/>
+        <NamedIndividual IRI="#Alchemist"/>
+        <NamedIndividual IRI="#Durable"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Have_Role"/>
+        <NamedIndividual IRI="#Alchemist"/>
+        <NamedIndividual IRI="#Initiator"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Have_Role"/>
+        <NamedIndividual IRI="#Alchemist"/>
+        <NamedIndividual IRI="#Nuker"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Have_Role"/>
+        <NamedIndividual IRI="#Alchemist"/>
+        <NamedIndividual IRI="#Support"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Have_Type"/>
+        <NamedIndividual IRI="#Alchemist"/>
+        <NamedIndividual IRI="#Melee"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Have_Attribute"/>
+        <NamedIndividual IRI="#Arc_Warden"/>
+        <NamedIndividual IRI="#Agility"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Have_Role"/>
+        <NamedIndividual IRI="#Arc_Warden"/>
+        <NamedIndividual IRI="#Carry"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Have_Role"/>
+        <NamedIndividual IRI="#Arc_Warden"/>
+        <NamedIndividual IRI="#Escape"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Have_Role"/>
+        <NamedIndividual IRI="#Arc_Warden"/>
+        <NamedIndividual IRI="#Nuker"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Have_Type"/>
+        <NamedIndividual IRI="#Arc_Warden"/>
+        <NamedIndividual IRI="#Range"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Have_Attribute"/>
+        <NamedIndividual IRI="#Bounty_Hunter"/>
+        <NamedIndividual IRI="#Agility"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Have_Role"/>
+        <NamedIndividual IRI="#Bounty_Hunter"/>
+        <NamedIndividual IRI="#Escape"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Have_Role"/>
+        <NamedIndividual IRI="#Bounty_Hunter"/>
+        <NamedIndividual IRI="#Nuker"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Have_Type"/>
+        <NamedIndividual IRI="#Bounty_Hunter"/>
+        <NamedIndividual IRI="#Melee"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Have_Attribute"/>
+        <NamedIndividual IRI="#Earth_Spirit"/>
+        <NamedIndividual IRI="#Strength"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Have_Role"/>
+        <NamedIndividual IRI="#Earth_Spirit"/>
+        <NamedIndividual IRI="#Disabler"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Have_Role"/>
+        <NamedIndividual IRI="#Earth_Spirit"/>
+        <NamedIndividual IRI="#Durable"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Have_Role"/>
+        <NamedIndividual IRI="#Earth_Spirit"/>
+        <NamedIndividual IRI="#Escape"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Have_Role"/>
+        <NamedIndividual IRI="#Earth_Spirit"/>
+        <NamedIndividual IRI="#Initiator"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Have_Role"/>
+        <NamedIndividual IRI="#Earth_Spirit"/>
+        <NamedIndividual IRI="#Nuker"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Have_Type"/>
+        <NamedIndividual IRI="#Earth_Spirit"/>
+        <NamedIndividual IRI="#Melee"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Have_Attribute"/>
+        <NamedIndividual IRI="#Invoker"/>
+        <NamedIndividual IRI="#Universal"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Have_Role"/>
+        <NamedIndividual IRI="#Invoker"/>
+        <NamedIndividual IRI="#Carry"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Have_Role"/>
+        <NamedIndividual IRI="#Invoker"/>
+        <NamedIndividual IRI="#Disabler"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Have_Role"/>
+        <NamedIndividual IRI="#Invoker"/>
+        <NamedIndividual IRI="#Escape"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Have_Role"/>
+        <NamedIndividual IRI="#Invoker"/>
+        <NamedIndividual IRI="#Nuker"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Have_Role"/>
+        <NamedIndividual IRI="#Invoker"/>
+        <NamedIndividual IRI="#Pusher"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Have_Type"/>
+        <NamedIndividual IRI="#Invoker"/>
+        <NamedIndividual IRI="#Range"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Have_Attribute"/>
+        <NamedIndividual IRI="#Jakiro"/>
+        <NamedIndividual IRI="#Intelligence"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Have_Role"/>
+        <NamedIndividual IRI="#Jakiro"/>
+        <NamedIndividual IRI="#Disabler"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Have_Role"/>
+        <NamedIndividual IRI="#Jakiro"/>
+        <NamedIndividual IRI="#Nuker"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Have_Role"/>
+        <NamedIndividual IRI="#Jakiro"/>
+        <NamedIndividual IRI="#Pusher"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Have_Role"/>
+        <NamedIndividual IRI="#Jakiro"/>
+        <NamedIndividual IRI="#Support"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Have_Type"/>
+        <NamedIndividual IRI="#Jakiro"/>
+        <NamedIndividual IRI="#Range"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Have_Attribute"/>
+        <NamedIndividual IRI="#Pudge"/>
+        <NamedIndividual IRI="#Strength"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Have_Role"/>
+        <NamedIndividual IRI="#Pudge"/>
+        <NamedIndividual IRI="#Disabler"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Have_Role"/>
+        <NamedIndividual IRI="#Pudge"/>
+        <NamedIndividual IRI="#Durable"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Have_Role"/>
+        <NamedIndividual IRI="#Pudge"/>
+        <NamedIndividual IRI="#Initiator"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Have_Role"/>
+        <NamedIndividual IRI="#Pudge"/>
+        <NamedIndividual IRI="#Nuker"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Have_Type"/>
+        <NamedIndividual IRI="#Pudge"/>
+        <NamedIndividual IRI="#Melee"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Have_Attribute"/>
+        <NamedIndividual IRI="#Rubick"/>
+        <NamedIndividual IRI="#Intelligence"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Have_Role"/>
+        <NamedIndividual IRI="#Rubick"/>
+        <NamedIndividual IRI="#Disabler"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Have_Role"/>
+        <NamedIndividual IRI="#Rubick"/>
+        <NamedIndividual IRI="#Nuker"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Have_Role"/>
+        <NamedIndividual IRI="#Rubick"/>
+        <NamedIndividual IRI="#Support"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Have_Type"/>
+        <NamedIndividual IRI="#Rubick"/>
+        <NamedIndividual IRI="#Range"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Have_Attribute"/>
+        <NamedIndividual IRI="#Terrorblade"/>
+        <NamedIndividual IRI="#Agility"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Have_Role"/>
+        <NamedIndividual IRI="#Terrorblade"/>
+        <NamedIndividual IRI="#Carry"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Have_Role"/>
+        <NamedIndividual IRI="#Terrorblade"/>
+        <NamedIndividual IRI="#Nuker"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Have_Role"/>
+        <NamedIndividual IRI="#Terrorblade"/>
+        <NamedIndividual IRI="#Pusher"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Have_Type"/>
+        <NamedIndividual IRI="#Terrorblade"/>
+        <NamedIndividual IRI="#Melee"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Have_Attribute"/>
+        <NamedIndividual IRI="#Tinker"/>
+        <NamedIndividual IRI="#Intelligence"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Have_Role"/>
+        <NamedIndividual IRI="#Tinker"/>
+        <NamedIndividual IRI="#Carry"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Have_Role"/>
+        <NamedIndividual IRI="#Tinker"/>
+        <NamedIndividual IRI="#Nuker"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Have_Role"/>
+        <NamedIndividual IRI="#Tinker"/>
+        <NamedIndividual IRI="#Pusher"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Have_Type"/>
+        <NamedIndividual IRI="#Tinker"/>
+        <NamedIndividual IRI="#Range"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Have_Attribute"/>
+        <NamedIndividual IRI="#Void_Spirit"/>
+        <NamedIndividual IRI="#Universal"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Have_Role"/>
+        <NamedIndividual IRI="#Void_Spirit"/>
+        <NamedIndividual IRI="#Carry"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Have_Role"/>
+        <NamedIndividual IRI="#Void_Spirit"/>
+        <NamedIndividual IRI="#Disabler"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Have_Role"/>
+        <NamedIndividual IRI="#Void_Spirit"/>
+        <NamedIndividual IRI="#Escape"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Have_Role"/>
+        <NamedIndividual IRI="#Void_Spirit"/>
+        <NamedIndividual IRI="#Nuker"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Have_Type"/>
+        <NamedIndividual IRI="#Void_Spirit"/>
+        <NamedIndividual IRI="#Melee"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Have_Difficulty"/>
+        <NamedIndividual IRI="#Abaddon"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#positiveInteger">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Have_Difficulty"/>
+        <NamedIndividual IRI="#Alchemist"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#positiveInteger">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Have_Difficulty"/>
+        <NamedIndividual IRI="#Arc_Warden"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#positiveInteger">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Have_Difficulty"/>
+        <NamedIndividual IRI="#Bounty_Hunter"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#positiveInteger">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Have_Difficulty"/>
+        <NamedIndividual IRI="#Earth_Spirit"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#positiveInteger">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Have_Difficulty"/>
+        <NamedIndividual IRI="#Invoker"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#positiveInteger">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Have_Difficulty"/>
+        <NamedIndividual IRI="#Jakiro"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#positiveInteger">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Have_Difficulty"/>
+        <NamedIndividual IRI="#Pudge"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#positiveInteger">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Have_Difficulty"/>
+        <NamedIndividual IRI="#Rubick"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#positiveInteger">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Have_Difficulty"/>
+        <NamedIndividual IRI="#Terrorblade"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#positiveInteger">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Have_Difficulty"/>
+        <NamedIndividual IRI="#Tinker"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#positiveInteger">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Have_Difficulty"/>
+        <NamedIndividual IRI="#Void_Spirit"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#positiveInteger">2</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Have_Attribute"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Have_Role"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Have_Type"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Have_Attribute"/>
+        <Class IRI="#Hero"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Have_Role"/>
+        <Class IRI="#Hero"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Have_Type"/>
+        <Class IRI="#Hero"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Have_Attribute"/>
+        <Class IRI="#Attribute"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Have_Role"/>
+        <Class IRI="#Role"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Have_Type"/>
+        <Class IRI="#Type"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Have_Difficulty"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#Have_Difficulty"/>
+    </FunctionalDataProperty>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Have_Difficulty"/>
+        <Class IRI="#Hero"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#Have_Difficulty"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:positiveInteger"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#positiveInteger">1</Literal>
+            </FacetRestriction>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#positiveInteger">3</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
