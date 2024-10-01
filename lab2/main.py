@@ -9,6 +9,7 @@ def main():
     print("""
     Welcome to the Dota 2 Hero program!
     You will be asked a few questions to find matching heroes.
+    Type 'exit' if you want to leave.
     """)
 
     user_roles = hero_selector.learn_user_roles()
