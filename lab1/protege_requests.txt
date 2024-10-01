@@ -1,0 +1,4 @@
+Hero and Have_Type value Melee
+
+Hero and Have_Type value Range and Have_Attribute value Agility
+
